@@ -1,0 +1,102 @@
+.navbar {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background: #eeebeb;
+    border-bottom: #4059e2 solid 0.3rem ;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.logo_text {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+}
+
+.nav_lists {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: inline;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin-left: 2rem;
+
+    cursor: pointer;
+}
+
+.list_profile {
+    margin-left: 1rem;
+}
+
+.profile_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 48%;
+    margin-top: 5px;
+}
+
+.hamburger {
+    display: none;
+    
+}
+
+
+.line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #4059e2;
+    margin-top: 4px ;
+}
+
+.event {
+    display: none;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .logo_text {
+        font-size: 1.5rem;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .lists {
+        position: absolute;
+        top: -300px;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    .active {
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #eeebeb;
+        transition: 0.4s;
+    }
+    .active > .list{
+        display: block;
+        margin: 25px auto;
+        text-align: center;
+    }
+
+    .event {
+        display: block;
+    }
+
+}
